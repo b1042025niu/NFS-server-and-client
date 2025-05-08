@@ -26,7 +26,7 @@ sudo apt install nfs-kernel-server
 ```
 systemctl status nfs-server
 ```
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_sever_status.png)
+![img](https://github.com/b1042025niu/NFS-server-and-client/blob/main/img/nfs_sever_status.png)
 - 啟動 NFS 伺服器服務狀態
 ```
 systemctl start nfs-server
@@ -68,18 +68,18 @@ sudo nano /etc/exports
 # sync: 在儲存之前可以將任何更改寫入硬碟
 # no_subtree_check: 防止子樹檢查
 ```
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_etc.png)
+![img](https://github.com/b1042025niu/NFS-server-and-client/blob/main/img/nfs_etc.png)
 ## NFS 伺服器防火牆設定
 - 允許客戶端通過防火牆
 ```
 sudo ufw allow from [clientIP or clientSubnetIP] to any port nfs
 ```
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_ufw.png)
+![img](https://github.com/b1042025niu/NFS-server-and-client/blob/main/img/nfs_ufw.png)
 - 檢查防火牆狀態
 ```
 sudo ufw status
 ```
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_ufw_status.png)
+![img](https://github.com/b1042025niu/NFS-server-and-client/blob/main/img/nfs_ufw_status.png)
 # NFS 客戶端安裝
 ## NFS 客戶端
 - NFS 客戶端安裝
@@ -95,7 +95,7 @@ sudo mkdir -p /mnt/sharedfolder_client
 sudo mount serverIP:/mnt/sharedfolder_server /mnt/sharedfolder_client
 ```
 # 最終完成畫面
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_f.png)
+![img](https://github.com/b1042025niu/NFS-server-and-client/blob/main/img/nfs_f.png)
 # 參考資料
 [NFS WIKI](https://zh.wikipedia.org/zh-tw/%E7%BD%91%E7%BB%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
 
